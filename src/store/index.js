@@ -20,7 +20,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    server: "http://192.168.8.175:8000",
+    server: "http://3.74.16.10:8000",
     snackbar: false,
     textSnackbar: "",
     isLoggedIn: false,

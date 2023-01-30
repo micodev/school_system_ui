@@ -6,8 +6,8 @@
           <v-col cols="12" sm="6">
             <v-text-field
               v-model="name"
-              placeholder="اسم الصف "
-              label="اسم الصف "
+              placeholder="اسم المرحلة "
+              label="اسم المرحلة "
               hide-details="auto"
               :rules="rules"
               clearable

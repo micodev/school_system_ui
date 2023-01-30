@@ -10,7 +10,7 @@
               v-model="selected_object.class_id"
               item-text="name"
               item-value="id"
-              label="الصف"
+              label="المرحلة"
               @change="onChange"
             ></v-autocomplete>
           </v-col>
@@ -28,8 +28,8 @@
           <v-col cols="12" sm="2">
             <v-text-field
               v-model="selected_object.lesson_number"
-              placeholder="عدد الدروس"
-              label="عدد الدروس"
+              placeholder="عدد المحاضرات"
+              label="عدد المحاضرات"
               hide-details="auto"
               :rules="rules"
               clearable

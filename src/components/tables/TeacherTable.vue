@@ -75,7 +75,7 @@
     >
       <template v-slot:top>
         <v-toolbar flat>
-          <v-toolbar-title>جدول المدرسين</v-toolbar-title>
+          <v-toolbar-title>جدول المحاضرين</v-toolbar-title>
           <v-divider class="mx-4" inset vertical></v-divider>
           <v-spacer></v-spacer>
           <v-text-field
@@ -306,9 +306,9 @@ export default {
       deep: true,
     },
   },
-   beforeDestroy(){
-    this.teacherQuery = ""
-  }
+  beforeDestroy() {
+    this.teacherQuery = "";
+  },
 };
 </script>
 <style></style>

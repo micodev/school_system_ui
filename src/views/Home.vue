@@ -33,7 +33,7 @@
                   c-dashboardInfo__title
                 "
               >
-                المدرسين
+                المحاضرين
               </h4>
               <span class="hind-font caption-12 c-dashboardInfo__count">{{
                 statistics[0].teachers
@@ -57,7 +57,7 @@
                   c-dashboardInfo__title
                 "
               >
-                الصفوف
+                المراحل
               </h4>
               <span class="hind-font caption-12 c-dashboardInfo__count">{{
                 statistics[0].stages

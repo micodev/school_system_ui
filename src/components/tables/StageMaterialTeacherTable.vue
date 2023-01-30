@@ -45,7 +45,7 @@
     >
       <template v-slot:top>
         <v-toolbar flat>
-          <v-toolbar-title>توزيع المدرسين</v-toolbar-title>
+          <v-toolbar-title>توزيع المحاضرين</v-toolbar-title>
           <v-divider class="mx-4" inset vertical></v-divider>
           <v-spacer></v-spacer>
           <v-text-field
@@ -120,7 +120,7 @@ export default {
           class: "secondary white--text title",
         },
         {
-          text: "الصف",
+          text: "المرحلة",
           value: "class_id",
           class: "secondary white--text title",
         },

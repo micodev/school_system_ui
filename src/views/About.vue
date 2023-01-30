@@ -8,7 +8,7 @@
     />
     <div class="loginPage">
       <div class="form">
-        <h2>تسجيل الدخول في منصة فرجال الالكترونية</h2>
+        <h2>تسجيل الدخول في منصة ايجوكيشن الالكترونية</h2>
         <form @submit.prevent="login">
           <div class="form-group text-right">
             <label for="exampleInputEmail1 ">اسم المستخدم</label>

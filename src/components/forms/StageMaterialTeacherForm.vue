@@ -10,7 +10,7 @@
               v-model="class_id"
               item-text="name"
               item-value="id"
-              label="الصف"
+              label="المرحلة"
             ></v-autocomplete>
           </v-col>
           <v-col class="d-flex" cols="12" sm="4">

@@ -11,7 +11,7 @@
               v-model="selected_object.class_id"
               item-text="name"
               item-value="id"
-              label="الصف"
+              label="المرحلة"
               @change="onChange"
             ></v-autocomplete>
           </v-col>

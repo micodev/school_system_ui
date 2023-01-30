@@ -99,7 +99,7 @@
               v-model="school_id"
               item-text="name"
               item-value="id"
-              label="المدرسة"
+              label="الكلية"
               @change="onChange"
             ></v-autocomplete>
           </v-col>
@@ -153,7 +153,7 @@
               v-model="class_id"
               item-text="name"
               item-value="id"
-              label="الصف"
+              label="المرحلة"
             ></v-autocomplete>
           </v-col>
         </v-row>

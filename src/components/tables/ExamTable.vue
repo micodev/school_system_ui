@@ -94,7 +94,7 @@ export default {
           class: "secondary white--text title",
         },
         {
-          text: "عدد الدروس",
+          text: "عدد المحاضرات",
           value: "lesson_number",
           class: "secondary white--text title",
         },

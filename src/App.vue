@@ -19,7 +19,7 @@
       ></v-app-bar-nav-icon>
       <!-- <v-btn color="dark" dark @click.stop="drawer = !drawer"> Toggle </v-btn> -->
       <v-spacer></v-spacer>
-      <v-toolbar-title>منصة فرجال الالكترونية</v-toolbar-title>
+      <v-toolbar-title>منصة ايجوكيشن الالكترونية</v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -35,7 +35,7 @@
       <template v-slot:prepend>
         <v-list-item two-line>
           <v-list-item-avatar>
-            <img src="/img/barham(2).png" />
+            <img src="/img/logo.jpg" />
           </v-list-item-avatar>
 
           <v-list-item-content>
@@ -102,7 +102,7 @@
             </v-list-item-icon>
 
             <v-list-item-content>
-              <v-list-item-title>المدرسين</v-list-item-title>
+              <v-list-item-title>المحاضرين</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <v-list-item
@@ -133,7 +133,7 @@
             </v-list-item-icon>
 
             <v-list-item-content>
-              <v-list-item-title>الجدول الاسبووعي</v-list-item-title>
+              <v-list-item-title>الجدول الاسبوعي</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <v-list-item to="/exam">
@@ -148,7 +148,7 @@
         </v-list-group>
         <v-list-group color="white" :value="false" prepend-icon="mdi-school">
           <template v-slot:activator>
-            <v-list-item-title>المدرسة</v-list-item-title>
+            <v-list-item-title>الكلية</v-list-item-title>
           </template>
           <v-list-item to="/stage">
             <v-list-item-icon>
@@ -156,7 +156,7 @@
             </v-list-item-icon>
 
             <v-list-item-content>
-              <v-list-item-title>الصفوف</v-list-item-title>
+              <v-list-item-title>المراحل</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <v-list-item to="/semester">
@@ -185,7 +185,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>توزيع الدروس </v-list-item-title>
+            <v-list-item-title>توزيع المحاضرات </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -226,7 +226,7 @@
             <v-list-item-title>التعليقات</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item to="/certificate">
+        <!-- <v-list-item to="/certificate">
           <v-list-item-icon>
             <font-awesome-icon :icon="['fa', 'graduation-cap']" />
           </v-list-item-icon>
@@ -234,7 +234,7 @@
           <v-list-item-content>
             <v-list-item-title>الشهادة</v-list-item-title>
           </v-list-item-content>
-        </v-list-item>
+        </v-list-item> -->
         <v-list-item @click="signOut">
           <v-list-item-icon>
             <v-icon>mdi-logout</v-icon>
@@ -262,7 +262,7 @@
       <router-view />
     </v-main>
     <v-divider></v-divider>
-    <footer class="mt-5" id="contact">
+    <!-- <footer class="mt-5" id="contact">
       <ul class="mr-5">
         <div id="icon-container">
           <a href="https://www.instagram.com/startt__up/">
@@ -283,7 +283,7 @@
         </div>
       </ul>
       <p>جميع الحقوق محفوظة لدى <b> &copy ستارت اب كروب</b></p>
-    </footer>
+    </footer> -->
   </v-app>
 </template>
 

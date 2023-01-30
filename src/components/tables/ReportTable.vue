@@ -183,7 +183,7 @@ export default {
           class: "secondary white--text title",
         },
         {
-          text: "الصف",
+          text: "المرحلة",
           value: "class_id",
           class: "secondary white--text title",
         },

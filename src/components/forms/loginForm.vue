@@ -9,7 +9,7 @@
 
     <div class="loginPage">
       <div class="form">
-        <h2>تسجيل الدخول في منصة فرجال الالكترونية</h2>
+        <h2>تسجيل الدخول في منصة ايجوكيشن الالكترونية</h2>
 
         <v-alert v-if="alert" class="text-right" type="error">
           {{ alertText }}</v-alert

@@ -39,12 +39,12 @@ export default {
       search: "",
       headers: [
         {
-          text: "اسم المدرسة",
+          text: "اسم الكلية",
           value: "name",
           class: "secondary white--text title",
         },
         {
-          text: "عنوان المدرسة",
+          text: "عنوان الكلية",
           value: "address",
           class: "secondary white--text title",
         },

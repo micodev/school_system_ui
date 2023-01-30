@@ -10,7 +10,7 @@
               v-model="class_id"
               item-text="name"
               item-value="id"
-              label="الصف"
+              label="المرحلة"
               @change="onChange"
             ></v-autocomplete>
           </v-col>
@@ -51,7 +51,7 @@ export default {
       rules: [(value) => !!value || "هذا الحقل مطلوب."],
       class_id: "",
       isSelection: false,
-     
+
       menu_props: {
         closeOnClick: false,
         closeOnContentClick: false,
@@ -215,9 +215,9 @@ export default {
       // this.$store.dispatch("CertificateModule/getCertificate");
     },
   },
-  beforeDestroy(){
+  beforeDestroy() {
     this.$store.dispatch("CertificateModule/resetFields");
-     this.$store.dispatch("StageModule/resetFields");
-  }
+    this.$store.dispatch("StageModule/resetFields");
+  },
 };
 </script>

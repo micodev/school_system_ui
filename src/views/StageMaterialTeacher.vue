@@ -2,7 +2,7 @@
   <v-container>
     <v-card class="mb-5">
       <v-toolbar dark color="secondary">
-        <v-toolbar-title align-center>توزيع الدروس</v-toolbar-title>
+        <v-toolbar-title align-center>توزيع المحاضرات</v-toolbar-title>
       </v-toolbar>
       <v-card-text>
         <StageMaterialTeacherForm></StageMaterialTeacherForm

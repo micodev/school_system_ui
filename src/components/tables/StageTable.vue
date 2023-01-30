@@ -21,7 +21,9 @@
       </template>
       <template v-slot:top>
         <v-toolbar>
-          <v-toolbar-title class="white--darkgrey">جدول الصفوف</v-toolbar-title>
+          <v-toolbar-title class="white--darkgrey"
+            >جدول المراحل</v-toolbar-title
+          >
           <v-divider class="mx-4" inset vertical></v-divider>
           <v-spacer></v-spacer>
           <v-text-field
@@ -43,7 +45,7 @@ export default {
       search: "",
       headers: [
         {
-          text: "الصف",
+          text: "المرحلة",
           value: "name",
           class: "secondary white--text title",
         },

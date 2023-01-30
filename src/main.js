@@ -7,7 +7,7 @@ import Axios from "axios";
 
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue"; // import lottie-vuejs
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faChalkboardTeacher,
   faSchool,
@@ -21,27 +21,24 @@ import {
   faFlag,
   faCommentDots,
   faGraduationCap,
-} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 Vue.use(LottieAnimation); // add lottie-animation to your global scope
 
-library.add(faChalkboardTeacher)
-library.add(faBookOpen)
-library.add(faUsers)
-library.add(faSchool)
-library.add(faBuilding)
-library.add(faTable)
-library.add(faMoneyBillAlt)
-library.add(faCommentAlt)
-library.add(faPen)
-library.add(faFlag)
-library.add(faCommentDots)
-library.add(faGraduationCap)
+library.add(faChalkboardTeacher);
+library.add(faBookOpen);
+library.add(faUsers);
+library.add(faSchool);
+library.add(faBuilding);
+library.add(faTable);
+library.add(faMoneyBillAlt);
+library.add(faCommentAlt);
+library.add(faPen);
+library.add(faFlag);
+library.add(faCommentDots);
+library.add(faGraduationCap);
 
-Vue.component('font-awesome-icon', FontAwesomeIcon)
-
-
-
+Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.config.productionTip = false;
 Vue.prototype.$http = Axios;
@@ -64,7 +61,7 @@ Axios.interceptors.response.use(
     // console.log(error.response.status);
     //error.response.status
 
-    if (error.response.status == 402) {
+    if (error && error.response && error.response.status == 402) {
       localStorage.removeItem("token");
       localStorage.removeItem("user_type");
       localStorage.removeItem("user_name");
@@ -76,11 +73,13 @@ Axios.interceptors.response.use(
       router.replace("/login");
     }
     // // console.log(error.response.data.message)
-    let message = error.response.data.message;
-    Object.keys(error.response.data.errors).forEach(element => {
-      message = message + "\n" + error.response.data.errors[element][0]
-    });
-    error.response.data.message = message
+    if (error && error.response) {
+      let message = error.response.data.message;
+      Object.keys(error.response.data.errors).forEach((element) => {
+        message = message + "\n" + error.response.data.errors[element][0];
+      });
+      error.response.data.message = message;
+    }
     // // console.log(message)
     // Any status codes that falls outside the range of 2xx cause this function to trigger
     // Do something with response error
